@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison Régionale des Sports - Grand Est</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SCREENSAVER (Kiosk Mode) -->
+    <div id="screensaver" class="screensaver hidden">
+        <div id="screensaver-bg" class="screensaver-bg"></div>
+        <div class="screensaver-content">
+            <h1>Maison Régionale des Sports</h1>
+            <p>Toucher l'écran pour commencer</p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">M</div>
+                <div class="logo-text">
+                    <h1>Maison Régionale</h1>
+                    <span>Des Sports Grand Est</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <a href="#home">Accueil</a>
+                <a href="#map">Plan</a>
+                <a href="#directory">Annuaire</a>
+                <a href="#access">Accès</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <span class="badge">Est. 2024</span>
+                <h2>Excellence & Performance</h2>
+                <p>Le siège des institutions sportives et le cœur stratégique du sport dans le Grand Est.</p>
+            </div>
+        </section>
+
+        <!-- INDOOR MAP -->
+        <section id="map" class="section-light">
+            <div class="container">
+                <div class="section-title">
+                    <div class="accent-bar"></div>
+                    <h3>Plan Technique</h3>
+                </div>
+
+                <div class="grid-layout">
+                    <!-- Text Info -->
+                    <div class="info-col">
+                        <p>La Maison Régionale offre des infrastructures de pointe adaptées aux exigences du haut
+                            niveau. Veuillez consulter le schéma technique ci-contre pour localiser les zones
+                            d'entraînement.</p>
+                        <div class="legend-box">
+                            <h4>Légende</h4>
+                            <ul>
+                                <li><span class="dot blue"></span> Zone Administrative</li>
+                                <li><span class="dot gray"></span> Zone Sportive</li>
+                                <li><span class="dot hollow"></span> Circulation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- The Blueprint -->
+                    <div class="blueprint-col">
+                        <div class="blueprint-ref">Ref: BLDG-A // Level 0</div>
+                        <div class="blueprint-grid">
+                            <!-- Zone A1 -->
+                            <div class="zone">
+                                <span class="zone-label">Sec. A1</span>
+                                <div class="zone-content">
+                                    <i class="fa-solid fa-basketball"></i>
+                                    <span class="zone-name">Grande Salle</span>
+                                    <span class="zone-cap">Cap. 1200</span>
+                                </div>
+                            </div>
+                            <!-- Zone A2 -->
+                            <div class="zone">
+                                <span class="zone-label">Sec. A2</span>
+                                <div class="zone-content">
+                                    <i class="fa-solid fa-hand-fist"></i>
+                                    <span class="zone-name">Dojo</span>
+                                    <span class="zone-cap">Tatami Olympique</span>
+                                </div>
+                            </div>
+                            <!-- Zone B1 -->
+                            <div class="zone">
+                                <span class="zone-label">Sec. B1</span>
+                                <div class="zone-content">
+                                    <i class="fa-solid fa-person-running"></i>
+                                    <span class="zone-name">Gymnastique</span>
+                                    <span class="zone-cap">Agrès Haut Niveau</span>
+                                </div>
+                            </div>
+                            <!-- Zone B2 -->
+                            <div class="zone">
+                                <span class="zone-label">Sec. B2</span>
+                                <div class="zone-content">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                    <span class="zone-name">Polyvalente</span>
+                                    <span class="zone-cap">Modulable</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIRECTORY -->
+        <section id="directory" class="section-white">
+            <div class="container">
+                <div class="directory-header">
+                    <div class="section-title">
+                        <div class="accent-bar"></div>
+                        <h3>Annuaire des Ligues</h3>
+                    </div>
+                    <div id="clock" class="clock">00:00</div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Entité</th>
+                                <th>Étage</th>
+                                <th class="text-right">Bureau</th>
+                            </tr>
+                        </thead>
+                        <tbody id="league-table-body">
+                            <!-- JS Generated Content -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCESS -->
+        <section id="access" class="section-light">
+            <div class="container">
+                <div class="section-title">
+                    <div class="accent-bar"></div>
+                    <h3>Accès & Localisation</h3>
+                </div>
+
+                <div class="access-grid">
+                    <div class="access-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>13 Rue Jean Moulin<br>54510 Tomblaine, France</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lun - Ven: 08:00 - 20:00<br>Sam: 09:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.649646452847!2d6.212457776918868!3d48.69314067131012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794980a3a60214b%3A0x6734c56221159980!2s13%20Rue%20Jean%20Moulin%2C%2054510%20Tomblaine!5e0!3m2!1sfr!2sfr!4v1709640000000!5m2!1sfr!2sfr"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <p class="footer-brand">Maison Régionale des Sports</p>
+                <p class="copyright">&copy; 2024 Tous droits réservés.</p>
+            </div>
+            <button id="admin-trigger-btn" class="admin-btn">
+                <i class="fa-solid fa-lock"></i> Admin Portal
+            </button>
+        </div>
+    </footer>
+
+    <!-- ADMIN MODAL -->
+    <dialog id="adminModal" class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <h3>Administration Système</h3>
+                <button id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- LOGIN VIEW -->
+            <div id="adminLogin" class="login-view">
+                <div class="login-icon">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <h4>Authentification Requise</h4>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Identifiant</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="loginUser" placeholder="admin" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Mot de passe</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="loginPass" placeholder="admin">
+                        </div>
+                    </div>
+
+                    <p id="loginError" class="error-msg hidden">
+                        <i class="fa-solid fa-circle-exclamation"></i> Identifiants incorrects
+                    </p>
+
+                    <button type="submit" class="btn-primary">Se connecter</button>
+                </form>
+            </div>
+
+            <!-- DASHBOARD VIEW -->
+            <div id="adminDashboard" class="dashboard-view hidden">
+                <div class="dashboard-toolbar">
+                    <span>Session: Admin</span>
+                    <button id="logout-btn" class="btn-text">
+                        <i class="fa-solid fa-right-from-bracket"></i> Déconnexion
+                    </button>
+                </div>
+
+                <div class="dashboard-content">
+                    <form id="adminAddForm" class="add-form">
+                        <div class="form-col-lg">
+                            <label>Entité</label>
+                            <input type="text" id="inputName" required placeholder="Ex: CROS Grand Est">
+                        </div>
+                        <div class="form-col-sm">
+                            <label>Étage</label>
+                            <select id="inputFloor">
+                                <option value="RDC">RDC</option>
+                                <option value="1">1er Étage</option>
+                                <option value="2">2ème Étage</option>
+                            </select>
+                        </div>
+                        <div class="form-col-sm">
+                            <label>Bureau</label>
+                            <input type="text" id="inputOffice" required placeholder="Ex: 104">
+                        </div>
+                        <div class="form-col-full">
+                            <button type="submit" class="btn-primary">Ajouter</button>
+                        </div>
+                    </form>
+
+                    <div class="table-scroll">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Étage</th>
+                                    <th class="text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminTableBody">
+                                <!-- JS Populated -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
